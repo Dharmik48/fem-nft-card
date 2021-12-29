@@ -64,7 +64,7 @@ body {
 
 .link {
 	color: hsl(var(--clr-white));
-	transition: 300ms ease-in-out;
+	transition: color 200ms ease-in-out;
 }
 
 .link:hover,
@@ -94,8 +94,32 @@ body {
 }
 
 .nft__img {
+	position: relative;
+
 	border-radius: 0.5em;
 	overflow: hidden;
+	cursor: pointer;
+	transition: all 200ms ease;
+}
+
+/* NFT image hover */
+.nft__img::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	width: 100%;
+
+	background: url('./images/icon-view.svg') no-repeat center,
+		hsl(var(--clr-cyan) / 0.5);
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+}
+
+.nft__img:hover::after {
+	opacity: 1;
 }
 
 .nft__details {
