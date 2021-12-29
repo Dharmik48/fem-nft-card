@@ -1,0 +1,46 @@
+:root {
+	--clr-blue: 215 51% 70%;
+	--clr-cyan: 179 100% 50%;
+	--clr-divider: 215 32% 27%;
+	--clr-white: 0 0% 100%;
+
+	--bg-main: 217 54% 11%;
+	--bg-card: 216 50% 16%;
+
+	--fs-para: 18px;
+}
+
+/* RESET */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	padding: 0;
+	margin: 0;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	color: inherit;
+	font-family: inherit;
+}
+
+/*  */
